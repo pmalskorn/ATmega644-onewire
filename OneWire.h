@@ -6,9 +6,9 @@ typedef struct onewire_t
 {
 	// bit = pin of port
 	uint8_t bit;
-	uint8_t *ddr;
-	uint8_t *port;
-	uint8_t *pin;
+	volatile uint8_t *ddr;
+	volatile uint8_t *port;
+	volatile uint8_t *pin;
 } onewire_t;
 
 enum timmings
